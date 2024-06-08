@@ -28,12 +28,13 @@ section { position: relative; }
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'Martel', serif;  /* Add your font here */ 
+  font-family: "Rosarivo", cursive;  /* Add your font here */ 
   color: var(--dark);
 }
 
 h1,{
   line-height: 1.1;
+  font-weight: 200;
 }
 
 h2, h3, h4, h5, h6 {
@@ -41,8 +42,8 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 1.2rem;
 }
 
-h1 {font-size: 6rem;}
-h2 { font-size: 3rem; }
+h1 {font-size: 9rem;}
+h2 { font-size: 3.5rem; }
 h3 { font-size: 1.8rem; }
 h4 { font-size: 1.6rem; }
 h5 { font-size: 1.4rem; }
@@ -367,7 +368,7 @@ nav a:hover {
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
 .-margin {
-  margin-top: -0.8rem;
+  margin-top: -2rem;
 }
 
 
