@@ -32,9 +32,12 @@ body {
   color: var(--dark);
 }
 
-h1,{
-  line-height: 1.1;
+h1{
+  line-height: 0.5;
   font-weight: 200;
+}
+.span-text{ 
+  font-size: 3.2rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -44,13 +47,13 @@ h2, h3, h4, h5, h6 {
 
 h1 {font-size: 9rem;}
 h2 { font-size: 3.5rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.6rem; }
+h3 { font-size: 4rem; }
+h4 { font-size: 2rem; }
 h5 { font-size: 1.4rem; }
 h6 { font-size: 1.2rem; }
 
 p, li {
-  line-height: 1.4; 
+  line-height: 1.6; 
   margin-bottom: 1rem;
   font-family: 'Martel', serif; 
   font-weight: 200;
@@ -66,10 +69,18 @@ p:last-child {
 	margin-bottom: 0;
 }
 
+.menu-title{
+  padding: 5% 0%;
+}
+.menu-text{
+  padding-bottom: 1rem;
+}
+
+
 /* Unique Typography Styles  */
 .emphasis       { font-size: 1.2rem; }
 .featured-text  { color: var(--featured-text);}
-.light-text     { color: var(--light-text);}
+.light-text     { color: var(--light);}
 .subtle         { opacity: 0.8;     }
 .subtitle       { font-size: 0.8rem; }
 .copyright      { font-size: 0.9rem; opacity: 0.8;}
@@ -89,6 +100,12 @@ a {
 
 a:hover {
   color: var(--featured-text); 
+}
+
+footer a{
+  display: block;
+  text-decoration: none;
+  padding: 0.2rem;
 }
 
 p a {
@@ -367,7 +384,10 @@ nav a:hover {
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
-.-margin {
+.-margin-2 {
+  margin-top: -2rem;
+}
+.-margin-1 {
   margin-top: -2rem;
 }
 
@@ -411,10 +431,13 @@ nav a:hover {
   .sm-text-right  { text-align: right; }
 
   .sm-padded     { padding: 5%; }
+  .sm-padded-0  { padding: 0; }
   .sm-padded-1   { padding: 1rem; }
   .sm-padded-05  { padding: 0.5rem; }
 
   .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-t { padding-top: 5%; }
+
   .sm-padded-b-0 { padding-bottom: 0; }
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
@@ -423,6 +446,33 @@ nav a:hover {
   .sm-portrait-tall { padding-bottom: 175%; }
   .sm-portrait      { padding-bottom: 125%; }
   .sm-square        { padding-bottom: 100%; }
+
+  .sm-heading-small{
+    font-size: 6rem
+  }
+  .sm-heading-smaller{
+    font-size: 2.2rem
+  }
+
+  .sm-bg-overlay {
+    position: relative;
+  }
+  
+  .sm-bg-overlay::before {
+    content: ""; 
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.2);
+  }
+  
+  .sm-bg-overlay > * {
+    position: relative;
+    z-index: 2;
+  }
 
 }
 
