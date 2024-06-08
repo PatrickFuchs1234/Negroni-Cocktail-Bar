@@ -14,6 +14,12 @@ img { max-width: 100%; height: auto; }
 
 section { position: relative; }
 
+:root {
+  --dark: #112c36;
+  --featured: teal;
+  --light: rgb(245,245,245);
+}
+
 /* ---------------------- Typography Styles ----------------------------- */
 .left    { text-align: left; }
 .right   { text-align: right; }
@@ -22,8 +28,12 @@ section { position: relative; }
 .uppercase    { text-transform: uppercase; }
 
 body {
-  font-family: 'Mulish', serif;  /* Add your font here */ 
-  color: var(--dark-text);
+  font-family: 'Martel', serif;  /* Add your font here */ 
+  color: var(--dark);
+}
+
+h1,{
+  line-height: 1.1;
 }
 
 h2, h3, h4, h5, h6 {
@@ -31,7 +41,8 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 1.2rem;
 }
 
-h2 { font-size: 2rem; }
+h1 {font-size: 6rem;}
+h2 { font-size: 3rem; }
 h3 { font-size: 1.8rem; }
 h4 { font-size: 1.6rem; }
 h5 { font-size: 1.4rem; }
@@ -122,6 +133,19 @@ p a:hover {
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
+}
+
+.bg-window{
+  background-image: url('/images/negroni-2.jpg');
+}
+.bg-glass{
+  background-image: url('/images/negroni-glass-faded.jpg');
+}
+.bg-leaves{
+  background-image: url('/images/negroni-4.jpg');
+}
+.bg-water{
+  background-image: url('/images/water-light.jpg');
 }
 
 /* Aspect Ratios */
@@ -341,6 +365,10 @@ nav a:hover {
 
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
+
+.-margin {
+  margin-top: -0.8rem;
+}
 
 
 /* ------------------------ Responsive Styles -------------------------- */
